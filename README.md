@@ -66,7 +66,8 @@ Ideally, you want:
 This means **public access is blocked**.
 
 ### Check bucket ACL
-
+# ACL --> Access Control List
+In S3, an ACL is a mechanism that defines who can access a bucket or object and what they can do with it.
 ```bash
 aws s3api get-bucket-acl --bucket mobin-demo-bucket
 ```
