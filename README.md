@@ -7,6 +7,17 @@ After creating the account login into your account(root user)
 search for IAM user 
 then click on create user to create the user
  the 
+##### DAY 2:
+| # | Operation         | Command                                 |
+| - | ----------------- | --------------------------------------- |
+| 1 | Create bucket     | `aws s3 mb s3://bucket-name`            |mb--> make buget|
+| 2 | List buckets      | `aws s3 ls`                             |ls--->list
+| 3 | Upload file       | `aws s3 cp file.txt s3://bucket-name/`  |cp---> copy
+| 4 | List bucket files | `aws s3 ls s3://bucket-name/`           |ls--->list
+| 5 | Download file     | `aws s3 cp s3://bucket-name/file.txt .` |
+| 6 | Delete file       | `aws s3 rm s3://bucket-name/file.txt`   |rm--> remove/delete
+| 7 | Delete bucket     | `aws s3 rb s3://bucket-name`            |rb---> remove bucket
+| 8 | Delete All files in bucket| aws s3 rm s3://mobin-demo-bucket/ --recursive |
 
 ##### DAY 3: 
 ## 1. Enable versioning
