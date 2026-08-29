@@ -1,1 +1,2 @@
 # aws-cli
+first we have to create a account in https://aws.amazon.com/free/?trk=78c55dff-53b9-4938-8ed3-d071891360dd&sc_channel=ps&trk=78c55dff-53b9-4938-8ed3-d071891360dd&sc_channel=ps&ef_id=CjwKCAjw48TUBhBREiwAK0GnQVNSYr2Z1cWwWwH06nKgkH41PN80WC5UVihAqB2fg9A7SJh53bJFLBoCqtoQAvD_BwE:G:s&s_kwcid=AL!4422!3!808712755158!e!!g!!aws!23846236475!198027716802&gad_campaignid=23846236475&gbraid=0AAAAADjHtp-DIRiLRq6ulcxI0ev47JgYd&gclid=CjwKCAjw48TUBhBREiwAK0GnQVNSYr2Z1cWwWwH06nKgkH41PN80WC5UVihAqB2fg9A7SJh53bJFLBoCqtoQAvD_BwE
