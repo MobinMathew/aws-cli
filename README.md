@@ -124,7 +124,7 @@ S3 Block Public Access is a security feature that prevents your S3 bucket or its
  `````
   aws s3api get-public-access-block --bucket mobin-demo-bucket
 This command means:
-
+`````
 aws → AWS CLI
 s3api → S3 API
 get-public-access-block → check Block Public Access settings
@@ -145,8 +145,9 @@ Understand the four settings:
 Enable all four settings
 
 If they're not already enabled, run:
-
+`````
 aws s3api put-public-access-block \
 --bucket mobin-demo-bucket \
 --public-access-block-configuration \
 BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuck
+`````
