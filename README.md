@@ -123,4 +123,30 @@ S3 Block Public Access is a security feature that prevents your S3 bucket or its
  |---Check your current settings:
  `````
   aws s3api get-public-access-block --bucket mobin-demo-bucket
-````
+This command means:
+
+aws → AWS CLI
+s3api → S3 API
+get-public-access-block → check Block Public Access settings
+--bucket → specify the bucket
+mobin-demo-bucket → your bucket
+
+it only checks the configuration; it doesn't change anything.
+
+Understand the four settings:
+| Setting                 | Simple meaning                                             |
+| ----------------------- | ---------------------------------------------------------- |
+| `BlockPublicAcls`       | Prevents new public ACLs from being created                |
+| `IgnorePublicAcls`      | Ignores public ACLs that exist                             |
+| `BlockPublicPolicy`     | Prevents policies that make the bucket publicly accessible |
+| `RestrictPublicBuckets` | Restricts access when a bucket has a public policy         |
+
+
+Enable all four settings
+
+If they're not already enabled, run:
+
+aws s3api put-public-access-block \
+--bucket mobin-demo-bucket \
+--public-access-block-configuration \
+BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuck
