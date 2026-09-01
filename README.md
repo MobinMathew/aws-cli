@@ -3,7 +3,7 @@ first we have to create a account in https://aws.amazon.com/free/?trk=78c55dff-5
 After creating the account login into your account(root user)
  
 # s3--->  Simple Storage Service is s an AWS cloud storage service used to store and retrieve files or data such as images, videos, documents, backups, logs, and application data. S3 stores data inside buckets, and each file is called an object with a unique key (name/path). It provides high durability, scalability, access control, versioning, encryption, and lifecycle management. For example, you can create an S3 bucket called mobin-demo-bucket, upload photo.jpg into it, and later download or access that file using AWS CLI, the AWS Console, or an application. 
-
+Access Key --> ARM
 search for IAM user 
 then click on create user to create the user
  the 
@@ -113,5 +113,14 @@ S3 Security
 ├── Bucket policy            → get-bucket-policy
 └── Encryption               → get-bucket-encryption
 ```
+# ACL --> Access Control list
+````
+aws s3api get-bucket-acl --bucket mobin-demo-bucket
+````
+# S3 Bucket Security — Block Public Access
+S3 Block Public Access is a security feature that prevents your S3 bucket or its objects from being accidentally exposed to the public/Internet.
 
-
+ |---Check your current settings:
+ `````
+  aws s3api get-public-access-block --bucket mobin-demo-bucket
+````
