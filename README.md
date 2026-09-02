@@ -151,3 +151,6 @@ aws s3api put-public-access-block \
 --public-access-block-configuration \
 BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuck
 `````
+# What is a Bucket Policy ?
+A bucket policy is a JSON-based access-control policy attached directly to an S3 bucket.
+
